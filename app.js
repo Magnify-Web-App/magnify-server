@@ -15,14 +15,12 @@ app.use(
   })
 )
 const session = require('express-session')
-const MongoStore = require('connect-mongo')(session)
 const session_setting = session({
   secret: 'magnify159088',
   resave: false,
   saveUninitialized: true,
   rolling: true,
-  cookie: { maxAge: 1000000 },
-  store: new MongoStore({ mongooseConnection: mongoose.connection })
+  cookie: { maxAge: 1000000 }
 })
 
 app.use(morgan('dev'))
