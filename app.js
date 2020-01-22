@@ -10,7 +10,11 @@ const cors = require('cors')
 
 app.use(
   cors({
-    origin: ['https://magnify-web-app.github.io', process.env.HOMEPAGE],
+    origin: [
+      'https://magnify-web-app.github.io',
+      process.env.HOMEPAGE,
+      'https://magnifyer.netlify.com'
+    ],
     credentials: true
   })
 )
