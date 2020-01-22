@@ -1,5 +1,7 @@
 # Magnify Web Application
 
+deploy-server : https://magnifyserver.herokuapp.com/
+
 ## Summary
 
 Magnify is a cross-platform application that provides prospective employers a hassle free candidate rating system.
